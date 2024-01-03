@@ -5,4 +5,6 @@
     <string name="title_activity_boxes">Boxes</string>
     <string name="title_activity_bottoni">Bottoni</string>
     <string name="title_activity_snack_bar_compose">SnackBarCompose</string>
+    <string name="title_activity_recycler_view_compose">RecyclerViewCompose</string>
+    <string name="title_activity_info">InfoActivity</string>
 </resources>

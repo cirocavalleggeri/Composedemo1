@@ -59,7 +59,7 @@ fun DisplaySnackBar() {
                         val snackbarResult=snackbarHostState.showSnackbar(
                             message = "This is the message",
                             actionLabel = "Undo",
-                            duration = SnackbarDuration.Indefinite
+                            duration = SnackbarDuration.Long
                         )
                         when(snackbarResult){
                             SnackbarResult.ActionPerformed-> Log.i("MYTAG","Accettato")
