@@ -12,4 +12,5 @@
     <string name="title_activity_compose_state_view_model">ComposeStateViewModel</string>
     <string name="title_activity_flow_demo1">FlowDemo1</string>
     <string name="title_activity_flow_demo_view_model">FlowDemoViewModel</string>
+    <string name="title_activity_flow_demo_cooroutine_pressure">FlowDemoCooroutinePressure</string>
 </resources>
