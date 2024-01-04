@@ -4,13 +4,12 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.buffer
-import kotlinx.coroutines.flow.collect
-
+import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
-class MyViewModelPressure:ViewModel() {
+class MyViewModelOperator : ViewModel(){
     val myFlow = flow<Int> {
         for (i in 1..100){
             emit(i)
@@ -33,15 +32,21 @@ class MyViewModelPressure:ViewModel() {
         }
 
         viewModelScope.launch {
-            //con  myFlow1.buffer().collect noi non facciamo aspettare il produttore,immagazziniamo tutti i suoi dati in un buffer
-            // con myFlow1.collectLatest a noi interessa solo il valore più recente
-            myFlow1.collect {
-                delay(3000L)
-                Log.i("MYTAG","Consumed $it")
-            }
+            myFlow1
+                .filter {
+                        count -> count%3 == 0
+                }
+                .map {
+                        it -> showMessage(it)
+                }
+                .collect {
+                    Log.i("MYTAG","Consumed $it")
+                }
         }
 
+    }
 
-
+    fun showMessage(count:Int):String{
+        return "Hello $count"
     }
 }

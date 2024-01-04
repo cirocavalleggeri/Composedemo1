@@ -13,4 +13,5 @@
     <string name="title_activity_flow_demo1">FlowDemo1</string>
     <string name="title_activity_flow_demo_view_model">FlowDemoViewModel</string>
     <string name="title_activity_flow_demo_cooroutine_pressure">FlowDemoCooroutinePressure</string>
+    <string name="title_activity_flow_demo_operator">FlowDemoOperator</string>
 </resources>
