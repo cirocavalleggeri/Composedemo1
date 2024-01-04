@@ -7,4 +7,5 @@
     <string name="title_activity_snack_bar_compose">SnackBarCompose</string>
     <string name="title_activity_recycler_view_compose">RecyclerViewCompose</string>
     <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_compose_state_demo">ComposeStateDemo</string>
 </resources>
