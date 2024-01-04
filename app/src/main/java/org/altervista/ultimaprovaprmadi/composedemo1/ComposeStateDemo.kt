@@ -45,7 +45,7 @@ class ComposeStateDemo : ComponentActivity() {
 
     //val count = mutableStateOf(0)
    // var count =0
-   val count= mutableStateOf(1)
+  // val count= mutableStateOf(1)
     @Preview(name = "MyButton")
     @Composable
     fun MyButton() {
@@ -53,7 +53,12 @@ class ComposeStateDemo : ComponentActivity() {
         val context = LocalContext.current
         Toast.makeText(context,"Se non si dice alla variabile cont che è soggetta a cambiamenti," +
                 "il numero nel bottone non si aggiorna",Toast.LENGTH_LONG).show()
-      //  val count = remember { mutableStateOf(0) }
+        val count = remember { mutableStateOf(0) }
+        // se la usiamo all interno di una funzione la variabile deve essere ricordata
+        // per la variabile count usiamo vaal e non var perchè essa è un oggetto e non una primitiva,quello che cambia
+        // è la proprietà count.value e non l'oggetto
+        //Tutta via possiamo trattare count come una variabile numerica se sostituiamo "=" con "by"
+        //    var count by remember { mutableStateOf(0) } ,in questo modo abbiamo delegato l'oggetto ad una proprietà
         Button(
             onClick = {
                count.value = count.value + 1
