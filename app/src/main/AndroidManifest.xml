@@ -13,6 +13,44 @@
         android:theme="@style/Theme.Composedemo1"
         tools:targetApi="31">
         <activity
+            android:name=".unitconverter.UnitConverter"
+            android:exported="true"
+            android:label="@string/title_activity_unit_converter"
+            android:theme="@style/Theme.Composedemo1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FlowShared"
+            android:exported="true"
+            android:label="@string/title_activity_flow_shared"
+            android:theme="@style/Theme.Composedemo1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".databinding.ActivityMainBinding11"
+            android:exported="false"
+            android:label="@string/title_activity_main_binding"
+            android:theme="@style/Theme.Composedemo1" />
+        <activity
+            android:name=".FlowState"
+            android:exported="true"
+            android:label="@string/title_activity_flow_state"
+            android:theme="@style/Theme.Composedemo1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".FlowDemoOperator"
             android:exported="true"
             android:label="@string/title_activity_flow_demo_operator"

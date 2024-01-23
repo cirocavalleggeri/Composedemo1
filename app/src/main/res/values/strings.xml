@@ -14,4 +14,8 @@
     <string name="title_activity_flow_demo_view_model">FlowDemoViewModel</string>
     <string name="title_activity_flow_demo_cooroutine_pressure">FlowDemoCooroutinePressure</string>
     <string name="title_activity_flow_demo_operator">FlowDemoOperator</string>
+    <string name="title_activity_flow_state">FlowState</string>
+    <string name="title_activity_main_binding">ActivityMainBinding</string>
+    <string name="title_activity_flow_shared">FlowShared</string>
+    <string name="title_activity_unit_converter">UnitConverter</string>
 </resources>

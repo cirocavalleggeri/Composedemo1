@@ -47,6 +47,11 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildFeatures {
+       // dataBinding = true
+
+       // viewBinding = true
+    }
 }
 
 dependencies {
@@ -63,6 +68,10 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    implementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    implementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
@@ -96,10 +105,17 @@ dependencies {
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
 
     implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1")
     //implementation ("'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
+
+
+
 }
